@@ -1,12 +1,9 @@
 import schedule
 from process import execute
+import time
 
-
-def job():
-    print("HELLO \n")
-
-
-schedule.every(5).seconds.do(execute)
+schedule.every().every().day.at("13:00").do(execute)
 
 while True:
     schedule.run_pending()
+    time.sleep(1)
