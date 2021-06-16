@@ -4,7 +4,7 @@ import time
 from continuous import continuous
 
 # schedule.every().day.at("17:24").do(execute)
-schedule.every().hour.do(execute)
+schedule.every(2).hours.do(execute)
 # schedule.every(10).seconds.do(execute)
 
 continuous()
